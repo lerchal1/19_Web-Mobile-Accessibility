@@ -2,10 +2,10 @@
 Group Project for the course "Web&amp;Mobile Accessibility" at UZH. 
 
 Members of this group are:
-Alexander Christian Lerch, 17-678-111
-Maximilian Achakri, 18-700-385
-Oliver Strassmann, 15-932-726
-Kirthan ???, ???
+- Alexander Christian Lerch, 17-678-111
+- Maximilian Achakri, 18-700-385
+- Oliver Strassmann, 15-932-726
+- Kirthan ???, ???
 
 
 # Run Project
