@@ -106,11 +106,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  function showTypedInPassword() {
-    var typpedPw=document.getElementById("login-password-control");
+function showTypedInPassword() {
+    var typpedPw = document.getElementById("login-password-control");
+
     if (typpedPw.type === "password") {
-        typpedPw.type= "text";
+        typpedPw.type = "text";
     } else {
         typpedPw.type ="password";
     }
+    
   }
