@@ -105,7 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 
-function showTypedInPassword() {
+
+  function showTypedInPassword() {
     var typpedPw=document.getElementById("login-password-control");
     if (typpedPw.type === "password") {
         typpedPw.type= "text";

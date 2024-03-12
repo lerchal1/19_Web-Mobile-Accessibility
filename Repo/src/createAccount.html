@@ -118,72 +118,82 @@
             <div class="col-12 col-md-7 mt-4 register">
                 <div class="p-4 bg-white">
                     <div class="text-primary mb-4 title">Create new account</div>
-                    <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
+                    <div class="text-danger mb-4 d-none subtitle" id="register-error" aria-live="assertive">Please correct the error(s)</div>
                     <ul class="sr-only" id="register-error-list"></ul>
                     <form id="register-form" novalidate>
+
+                        <fieldset>
                         <div class="form-group">
-                            <p class="form-label" id="register-basic-legend">Basic information
-                                <small class="text-secondary">(optional)</small>
-                            </p>
+                            <legend for="register-basic-legend" class="form-label" >Basic information
+                                <small id="register-basic-legend"  class="text-secondary">(required)</small>
+                            </legend>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>First name</p>
-                                    <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
-                                    <small class="invalid-feedback"></small>
+                                    <label for="register-first-name-control">First name</label>
+                                    <input id="register-first-name-control" class="form-control" type="text" placeholder="First name" name="First name" required aria-required="true">
+                                    <small id="register-first-name-error" class="invalid-feedback"  >Please enter your correct First name</small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>Last name</p>
-                                    <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
-                                    <small class="invalid-feedback"></small>
+                                    <label for="register-last-name-control">Last name</label>
+                                    <input id="register-last-name-control" class="form-control" type="text"  placeholder="Last name" name="Last name" required aria-required="true">
+                                    <small id="register-last-name-error" class="invalid-feedback">Please enter your correct Last name</small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <p>Email</p>
-                                <input class="form-control" id="register-email-control" type="email" placeholder="Email" required>
-                                <small class="invalid-feedback"></small>
+                                <label for="register-email-control">Email</label>
+                                <input id="register-email-control"class="form-control"  type="email" placeholder="Email" name="Email" required aria-required="true">
+                                <small id="register-email-error" class="invalid-feedback">Please enter your correct Email</small>
                             </div>
                             <div class="form-group">
-                                <p>Password</p>
-                                <input class="form-control" id="register-password-control" type="password" placeholder="Password" required>
-                                <small class="invalid-feedback"></small>
+                                <label for="register-password-control">Password</label>
+                                <input id="register-password-control" class="form-control"  type="password" placeholder="Password" name="Password" required aria-required="true">
+                                <small id="register-password-error" class="invalid-feedback">Please enter your correct Password</small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
+                                <div class="form-check">
+                                    <input  class="form-check-input" id="remember-password-control" type="checkbox" onclick="showTypedInPassword()">
+                                    <label for="remember-password-control" class="form-check-label">Show hidden password</label>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <p>Programme</p>
-                                <select class="form-control" id="register-programme-control" required>
+                                <label for="register-password-control">Programme</label>
+                                <select id="register-programme-control" class="form-control" name="Programme" aria-required="true">
                                     <option value="">Please select your education or research programme</option>
                                     <option value="bachelor">Bachelor</option>
                                     <option value="master">Master</option>
                                     <option value="continuing">Continuing education</option>
                                     <option value="doctorate">Doctorate</option>
                                 </select>
-                                <small class="invalid-feedback"></small>
+                                <small id="register-programme-error" class="invalid-feedback">Please select your Programme</small>
                             </div>
                         </div>
+                    </fieldset>
+
+                    <fieldset>
                         <div class="form-group">
-                            <p class="form-label" id="register-address-legend">Additional information
-                                <small class="text-secondary">(optional)</small>
-                            </p>
+                            <legend for="register-address-legend" class="form-label" >Additional information
+                                <small id="register-address-legend" class="text-secondary">(optional)</small>
+                            </legend>
                             <div class="form-group">
-                                <p>Street</p>
-                                <input class="form-control" id="register-street-control" type="text" placeholder="Street">
+                                <label for="register-street-control">Street</label>
+                                <input class="form-control" id="register-street-control" type="text" placeholder="Street" name="Street">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-5">
-                                    <p>City</p>
-                                    <input class="form-control" id="register-city-control" type="text" placeholder="City">
+                                    <label for="register-city-control">City</label>
+                                    <input class="form-control" id="register-city-control" type="text" placeholder="City" name="City">
                                 </div>
                                 <div class="form-group col-12 col-lg-4">
-                                    <p>State</p>
-                                    <input class="form-control" id="register-state-control" type="text" placeholder="State">
+                                    <label for="register-state-control">State</label>
+                                    <input class="form-control" id="register-state-control" type="text" placeholder="State" name="State">
                                 </div>
                                 <div class="form-group col-12 col-lg-3">
-                                    <p>Zip</p>
-                                    <input class="form-control" id="register-zip-control" type="text" placeholder="Zip">
+                                    <label for="register-zip-control">Zip</label>
+                                    <input class="form-control" id="register-zip-control" type="number" placeholder="Zip" name="zip">
                                 </div>
                             </div>
                         </div>
                         <button class="btn btn-primary" id="register-register-button">Register</button>
+                    </fieldset>
                     </form>
                 </div>
             </div>
@@ -206,7 +216,7 @@
     <script type="text/javascript" src="./js/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/createAccount.js"></script>
 </body>
 
 </html>
