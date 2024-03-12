@@ -9,6 +9,8 @@ Members of this group are:
 
 
 # Run Project
+Download all the applications in the /installable folder --> (gitignored)
+
 Navigate to the /src folder & run the below stated command:
 
 python -m http.server 8000
