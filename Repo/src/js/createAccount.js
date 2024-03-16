@@ -99,6 +99,21 @@ function register(event) {
     }
 }
 
+
+function showTypedInPasswordCreateAccount() {
+    var typpedPw = document.getElementById("register-password-control");
+    
+    console.log(typpedPw);
+    console.log(typpedPw.type);
+    
+    if (typpedPw.type === "password") {
+        typpedPw.type = "text";
+    } else {
+        typpedPw.type ="password";
+    }
+    
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
 
@@ -106,16 +121,3 @@ document.addEventListener('DOMContentLoaded', function() {
         .getElementById('register-register-button')
         .addEventListener('click', register, false);
 }, false);
-
-
-
-function showTypedInPassword() {
-    var typpedPw = document.getElementById("login-password-control");
-
-    if (typpedPw.type === "password") {
-        typpedPw.type = "text";
-    } else {
-        typpedPw.type ="password";
-    }
-    
-  }
