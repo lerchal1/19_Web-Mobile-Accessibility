@@ -4062,16 +4062,16 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: hsla(0, 0%, 100%, .5)
+    color: #fff
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: hsla(0, 0%, 100%, .75)
+    color: #fff
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
-    color: hsla(0, 0%, 100%, .25)
+    color: #fff
 }
 
 .navbar-dark .navbar-nav .active>.nav-link,
@@ -4082,8 +4082,8 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-toggler {
-    color: hsla(0, 0%, 100%, .5);
-    border-color: hsla(0, 0%, 100%, .1)
+    color: #fff;
+    border-color: #fff
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -8184,21 +8184,21 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #4b6660 !important
+    color: #000000 !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #354944 !important
+    color: #000000 !important
 }
 
 .text-secondary {
-    color: #6c757d !important
+    color: #000000 !important
 }
 
 a.text-secondary:focus,
 a.text-secondary:hover {
-    color: #545b62 !important
+    color: #000000 !important
 }
 
 .text-success {
