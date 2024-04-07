@@ -8184,12 +8184,12 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #4b6660 !important
+    color: #000000 !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #354944 !important
+    color: #000000 !important
 }
 
 .text-secondary {
@@ -8198,7 +8198,7 @@ a.text-primary:hover {
 
 a.text-secondary:focus,
 a.text-secondary:hover {
-    color: #545b62 !important
+    color: #000000 !important
 }
 
 .text-success {
